@@ -2,6 +2,8 @@ import './style.css';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
+
+
 // Setup
 
 const scene = new THREE.Scene();
@@ -34,24 +36,60 @@ const controls = new OrbitControls(camera, renderer.domElement);
 
 
 
+
+
+
 const spaceTexture = new THREE.TextureLoader().load('street.jpg');
 scene.background = spaceTexture;
 
 
 
 
-const michaelTexture = new THREE.TextureLoader().load('cartoonme.png');
 
-const michael = new THREE.Mesh(new THREE.BoxGeometry(9, 9, 9), new THREE.MeshBasicMaterial({ map: michaelTexture }));
+
+let materials = [
+  new THREE.MeshBasicMaterial({
+      map: new THREE.TextureLoader().load('sql.png')
+  }),
+  new THREE.MeshBasicMaterial({
+    map: new THREE.TextureLoader().load('dtv.jpg')
+}),
+new THREE.MeshBasicMaterial({
+  map: new THREE.TextureLoader().load('uncw.png')
+}),
+new THREE.MeshBasicMaterial({
+  map: new THREE.TextureLoader().load('js.png')
+}),
+new THREE.MeshBasicMaterial({
+  map: new THREE.TextureLoader().load('python.png')
+}),
+new THREE.MeshBasicMaterial({
+  map: new THREE.TextureLoader().load('htmlcss.png')
+})];
+
+const michael = new THREE.Mesh(new THREE.BoxGeometry(9, 9, 9), materials);
+
 
 const robotTexture = new THREE.TextureLoader().load('robot.jpeg');
 const footballTexture = new THREE.TextureLoader().load('football.png');
+const etchTexture = new THREE.TextureLoader().load('etch.jpeg');
+const calcTexture = new THREE.TextureLoader().load('calculator.jpeg');
+const invTexture = new THREE.TextureLoader().load('invoice.jpg');
 const michael2 = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: footballTexture }));
 const michael3 = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: robotTexture }));
+const michael4 = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: etchTexture }));
+const michael5 = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: calcTexture }));
+const michael6 = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: invTexture }));
 
 scene.add(michael);
 scene.add(michael2);
 scene.add(michael3);
+scene.add(michael4);
+scene.add(michael5);
+scene.add(michael6);
+
+
+let array1 = [michael2, michael3, michael4, michael5, michael6]
 
 
 michael.position.z = 10;
@@ -62,6 +100,15 @@ michael2.position.y = -10;
 michael3.position.y = -10;
 michael3.position.x = 15;
 michael3.position.z = 10;
+michael4.position.y = -10;
+michael4.position.x = 20;
+michael4.position.z = 10;
+michael5.position.y = -10;
+michael5.position.x = 25;
+michael5.position.z = 10;
+michael6.position.y = -10;
+michael6.position.x = 30;
+michael6.position.z = 10;
 
 
 
@@ -80,14 +127,22 @@ function animate() {
   michael.rotation.x += 0.01;
   michael.rotation.y += 0.005;
   michael.rotation.z += 0.01;
-  if (michael2.position.x >= -40)
-  {
-    michael2.position.x += -0.1;
+ 
+  for (const item of array1){
+    if (item.position.x >= -40){
+      item.position.x += -0.1;
+
+    }
+    else{
+      item.position.x = 40;
+    }
 
   }
-  else{
-    michael2.position.x = 40;
-  }
+    
+  
+
+  
+  
   
 
 

@@ -30,7 +30,7 @@ main {
   grid-template-columns: repeat(12, 1fr);
 }
 
-h1{
+h1, h2{
   font-family: elevon, sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -48,17 +48,17 @@ canvas {
     background: var(--dark-bg);
     grid-column: 1 / span 3;
     font-size: 2.5rem;
-    padding: 2rem;
-    margin-bottom: var(--spacing);
+    padding: 1rem;
+    margin-bottom: 10px;
   }
 
 
   section {
-    grid-column: 2 / 8;
-    padding: 1rem;
+    grid-column: 1 / span 1;
+    padding: 0.5rem;
     background: var(--dark-bg);
     font-size: 1.25rem;
-    line-height: 1.5;
+    line-height: 0.5;
     margin-bottom: var(--spacing);
   }
 
