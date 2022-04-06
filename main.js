@@ -93,7 +93,7 @@ let array1 = [michael2, michael3, michael4, michael5, michael6]
 
 
 michael.position.z = 10;
-michael.position.x = 0nnpmnpm;
+michael.position.x = 0;
 michael2.position.z = 10;
 michael2.position.x = 10;
 michael2.position.y = -10;
