@@ -38,31 +38,32 @@ const spaceTexture = new THREE.TextureLoader().load('street.jpg');
 scene.background = spaceTexture;
 
 
+
+
 const michaelTexture = new THREE.TextureLoader().load('cartoonme.png');
 
-const michael = new THREE.Mesh(new THREE.BoxGeometry(12, 12, 12), new THREE.MeshBasicMaterial({ map: michaelTexture }));
+const michael = new THREE.Mesh(new THREE.BoxGeometry(9, 9, 9), new THREE.MeshBasicMaterial({ map: michaelTexture }));
+
+const robotTexture = new THREE.TextureLoader().load('robot.jpeg');
+const footballTexture = new THREE.TextureLoader().load('football.png');
+const michael2 = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: footballTexture }));
+const michael3 = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: robotTexture }));
 
 scene.add(michael);
+scene.add(michael2);
+scene.add(michael3);
 
 
-michael.position.z = 3;
-michael.position.setX = 10;
-
-function moveCamera(){
-  const t = document.body.getBoundingClientRect().top;
-
-  michael.rotation.y += 0.01;
-  michael.rotation.z += 0.01;
-
-  
+michael.position.z = 10;
+michael.position.x = 10;
+michael2.position.z = 10;
+michael2.position.x = 10;
+michael2.position.y = -10;
+michael3.position.y = -10;
+michael3.position.x = 15;
+michael3.position.z = 10;
 
 
-
-
-
-}
-
-document.body.onscroll = moveCamera
 
 
 
@@ -79,6 +80,16 @@ function animate() {
   michael.rotation.x += 0.01;
   michael.rotation.y += 0.005;
   michael.rotation.z += 0.01;
+  if (michael2.position.x >= -40)
+  {
+    michael2.position.x += -0.1;
+
+  }
+  else{
+    michael2.position.x = 40;
+  }
+  
+
 
 
 
