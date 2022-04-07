@@ -155,6 +155,14 @@ function onMouseClick( event ) {
     }
 }
 
+function onMouseHover( event ) {
+  raycaster.setFromCamera( mouse, camera );
+  var isIntersected = raycaster.intersectObjects(array1);
+  if (isIntersected.length > 0) {
+      console.log('Hovering!')
+  }
+}
+
 function onMouseMove( event ) {
   mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
   mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
@@ -163,6 +171,7 @@ function onMouseMove( event ) {
 
 
 window.addEventListener( 'click', onMouseClick, false );
+window.addEventListener( 'mouseover', onMouseClick, false );
 window.addEventListener( 'mousemove', onMouseMove, false );
 
 
