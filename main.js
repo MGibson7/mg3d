@@ -159,9 +159,6 @@ function animate() {
   michael.rotation.z += 0.01;
  
   for (const item of array1){
-    item.on('click', function(){
-      item.scale.set(20,20,20)
-    })
     if (item.position.x >= -40){
       item.position.x += -0.1;
 
