@@ -171,7 +171,7 @@ function onMouseMove( event ) {
 
 
 window.addEventListener( 'click', onMouseClick, false );
-window.addEventListener( 'mouseover', onMouseClick, false );
+window.addEventListener( 'mouseover', onMouseHover, false );
 window.addEventListener( 'mousemove', onMouseMove, false );
 
 
@@ -188,6 +188,7 @@ function animate() {
   michael.rotation.z += 0.01;
  
   for (const item of array1){
+
 
     if (item.position.x >= -40){
       item.position.x += -0.1;
