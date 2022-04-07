@@ -151,6 +151,15 @@ function onMouseClick( event ) {
     raycaster.setFromCamera( mouse, camera );
     var isIntersected = raycaster.intersectObject(michael2);
     var project2Inter = raycaster.intersectObject(michael3);
+    var project3Inter = raycaster.intersectObject(michael4);
+    var project4Inter = raycaster.intersectObject(michael5);
+    var project5Inter = raycaster.intersectObject(michael6);
+    var project6Inter = raycaster.intersectObject(michael7);
+    var project7Inter = raycaster.intersectObject(michael8);
+    var project8Inter = raycaster.intersectObject(michael9);
+    var project9Inter = raycaster.intersectObject(michael10);
+    var project10Inter = raycaster.intersectObject(michael11);
+
     if (isIntersected.length > 0) {
         console.log('Mesh clicked!')
         let projecthere = document.getElementById('projecthere')
@@ -166,7 +175,25 @@ function onMouseClick( event ) {
         projecthere.innerHTML = "<img src = './robot.jpeg' alt = 'Helmet' width = 100px, height = 100px>\
         <a href= 'https://github.com/MGibson7/RockPaperScissorsJava' target='_blank' rel='noopener noreferrer'><button>SOURCE CODE</button></a>\
                         <a href= './RockPaperScissorsJava.mp4'target='_blank' rel='noopener noreferrer'><button>LIVE DEMO</button></a>\
-                        <p>Trading card game that assigns you a random player from a random year and then it's up to you to accept or reject a trade offer for them.</p>"
+                        <p>rock-paper-scissors against the computer in first to 5 matches and keeps track of titles won.</p>"
+
+    }
+    else if (project3Inter.length >0){
+      console.log('Mesh clicked!')
+        let projecthere = document.getElementById('projecthere')
+        projecthere.innerHTML = "<img src = './etch.jpeg' alt = 'Etch' width = 100px, height = 100px>\
+        <a href= 'https://github.com/MGibson7/etchasketch' target='_blank' rel='noopener noreferrer'><button>SOURCE CODE</button></a>\
+                          <a href= 'https://mgibson7.github.io/etchasketch/'target='_blank' rel='noopener noreferrer'><button>LIVE DEMO</button></a>\
+                        <p>Program to mimic an Etch A Sketch utilizing DOM Manipulation via JavaScript.</p>"
+
+    }
+    else if (project4Inter.length >0){
+      console.log('Mesh clicked!')
+        let projecthere = document.getElementById('projecthere')
+        projecthere.innerHTML = "<img src = './calculator.png' alt = 'Calculator' width = 100px, height = 100px>\
+        <a href= 'https://github.com/MGibson7/calculator' target='_blank' rel='noopener noreferrer'><button>SOURCE CODE</button></a>\
+        <a href= 'https://mgibson7.github.io/Calculator/'target='_blank' rel='noopener noreferrer'><button>LIVE DEMO</button></a>\
+                        <p>Utilizing JS functions and DOM manipulation to produce a calculator.</p>"
 
     }
 }
