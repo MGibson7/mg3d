@@ -204,9 +204,7 @@ function animate() {
   michael.rotation.z += 0.01;
  
   for (const item of array1){
-    while (hover.length>0){
-      console.log("made it")
-    }
+    item.style('cursor', 'pointer')
     if (item.position.x >= -40){
       item.position.x += -0.1;
 
