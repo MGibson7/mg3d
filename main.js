@@ -190,10 +190,67 @@ function onMouseClick( event ) {
     else if (project4Inter.length >0){
       console.log('Mesh clicked!')
         let projecthere = document.getElementById('projecthere')
-        projecthere.innerHTML = "<img src = './calculator.png' alt = 'Calculator' width = 100px, height = 100px>\
+        projecthere.innerHTML = "<img src = './calculator.jpeg' alt = 'Calculator' width = 100px, height = 100px>\
         <a href= 'https://github.com/MGibson7/calculator' target='_blank' rel='noopener noreferrer'><button>SOURCE CODE</button></a>\
         <a href= 'https://mgibson7.github.io/Calculator/'target='_blank' rel='noopener noreferrer'><button>LIVE DEMO</button></a>\
                         <p>Utilizing JS functions and DOM manipulation to produce a calculator.</p>"
+
+    }
+    else if (project5Inter.length >0){
+      console.log('Mesh clicked!')
+        let projecthere = document.getElementById('projecthere')
+        projecthere.innerHTML = "<img src = './invoice.jpg' alt = 'Invoice' width = 100px, height = 100px>\
+        <a href= 'https://github.com/MGibson7/FFLTechInvoiceMaker' target='_blank' rel='noopener noreferrer'><button>SOURCE CODE</button></a>\
+                        <a href= './ViasatInvoicing.mp4'target='_blank' rel='noopener noreferrer'><button>LIVE DEMO</button></a>\
+                        <p>scrapes completed job data from company site and compiles it into a word document invoice based on the inputted tech and date range.</p>"
+
+    }
+    else if (project6Inter.length >0){
+      console.log('Mesh clicked!')
+        let projecthere = document.getElementById('projecthere')
+        projecthere.innerHTML = "<img src = './dtv.jpg' alt = 'DirecTV' width = 100px, height = 100px>\
+        <a href= 'https://github.com/MGibson7/ACDTVSQLQUERIES' target='_blank' rel='noopener noreferrer'><button>SOURCE CODE</button></a>\
+                        <a href= './ACDTVSQL2.mp4'target='_blank' rel='noopener noreferrer'><button>LIVE DEMO</button></a>\
+                        <p>SQL code for pulling total number of unique accounts and subsequent billing from large assortment of account data. \
+                        Group unique accounts, sort by revenue, state, etc. Quick view of new accounts vs lost accounts. See overview of customer base differences month vs month.</p>"
+
+    }
+    else if (project7Inter.length >0){
+      console.log('Mesh clicked!')
+        let projecthere = document.getElementById('projecthere')
+        projecthere.innerHTML = "<img src = './contact.png' alt = 'Phone' width = 100px, height = 100px>\
+        <a href= 'https://github.com/MGibson7/ACAddTechContactInfo' target='_blank' rel='noopener noreferrer'><button>SOURCE CODE</button></a>\
+                        <a href= './addcontactinfovia.mp4'target='_blank' rel='noopener noreferrer'><button>LIVE DEMO</button></a>\
+                        <p>Program uses selenium and adds phone number of corresponding tech that is assigned to that work order.</p>"
+
+    }
+    else if (project8Inter.length >0){
+      console.log('Mesh clicked!')
+        let projecthere = document.getElementById('projecthere')
+        projecthere.innerHTML = "<img src = './viasat.png' alt = 'Viasat' width = 100px, height = 100px>\
+        <a href= 'https://github.com/MGibson7/ViasatMovingAvgs' target='_blank' rel='noopener noreferrer'><button>SOURCE CODE</button></a>\
+                        <a href= './viasatmoving.mp4'target='_blank' rel='noopener noreferrer'><button>LIVE DEMO</button></a>\
+                        <p>scrape data off company site to provide an indepth report of the 90 day, 60 day, 30 day, and\
+                        15 day moving averages (normalized for a 30 day period). This was utilized to optimize equipment ordering and save on shipping costs/avoid out of stock reschedules.</p>"
+
+    }
+    else if (project9Inter.length >0){
+      console.log('Mesh clicked!')
+        let projecthere = document.getElementById('projecthere')
+        projecthere.innerHTML = "<img src = './fire.png' alt = 'Fire' width = 100px, height = 100px>\
+        <a href= 'https://github.com/MGibson7/UltimateFIREProgram' target='_blank' rel='noopener noreferrer'><button>SOURCE CODE</button></a>\
+                        <a href= './video/fire.mp4'target='_blank' rel='noopener noreferrer'><button>LIVE DEMO</button></a>\
+                        <p>Program to forecast potential retirement savings with inputted variables \
+                        (having a kid in X year, new home in X year at X price, wage increase/decrease, etc.)</p>"
+
+    }
+    else if (project10Inter.length >0){
+      console.log('Mesh clicked!')
+        let projecthere = document.getElementById('projecthere')
+        projecthere.innerHTML = "<img src = './junk.webp' alt = 'Junk' width = 100px, height = 100px>\
+        <a href= 'https://github.com/MGibson7/SMALLBIZAUTOMATION-JunkintheTruck' target='_blank' rel='noopener noreferrer'><button>SOURCE CODE</button></a>\
+                        <a href= './JunkinTruckTexts.mp4'target='_blank' rel='noopener noreferrer'><button>LIVE DEMO</button></a>\
+                        <p>text alerts of incoming job opportunities to vendors dependent on their criteria & ability</p>"
 
     }
 }
