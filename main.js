@@ -239,7 +239,7 @@ function onMouseClick( event ) {
         let projecthere = document.getElementById('projecthere')
         projecthere.innerHTML = "<img src = './fire.png' alt = 'Fire' width = 100px, height = 100px>\
         <a href= 'https://github.com/MGibson7/UltimateFIREProgram' target='_blank' rel='noopener noreferrer'><button>SOURCE CODE</button></a>\
-                        <a href= './video/fire.mp4'target='_blank' rel='noopener noreferrer'><button>LIVE DEMO</button></a>\
+                        <a href= './fire.mp4'target='_blank' rel='noopener noreferrer'><button>LIVE DEMO</button></a>\
                         <p>Program to forecast potential retirement savings with inputted variables \
                         (having a kid in X year, new home in X year at X price, wage increase/decrease, etc.)</p>"
 
