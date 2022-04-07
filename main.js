@@ -153,9 +153,10 @@ function onMouseClick( event ) {
     if (isIntersected.length > 0) {
         console.log('Mesh clicked!')
         let projecthere = document.getElementById('projecthere')
-        projecthere.innerHTML = "<p> ALL TIME FANTASY FOOTBALL</p>\
+        projecthere.innerHTML = "<img src = './img/football.png' alt = 'Helmet' width = 100px, height = 100px>\
         <a href= 'https://github.com/MGibson7/ALLTIMEFANTASY' target='_blank' rel='noopener noreferrer'><button id = source1>SOURCE CODE</button></a>\
-                        <a href= './video/FantasyTrading.mp4'target='_blank' rel='noopener noreferrer'><button id = demo1>LIVE DEMO</button></a>"
+                        <a href= './video/FantasyTrading.mp4'target='_blank' rel='noopener noreferrer'><button id = demo1>LIVE DEMO</button></a>\
+                        <p>Trading card game that assigns you a random player from a random year and then it's up to you to accept or reject a trade offer for them.</p>"
 
     }
 }
@@ -193,11 +194,11 @@ function animate() {
   michael.rotation.z += 0.01;
  
   for (const item of array1){
-    if (hover.length>0){
-      break
+    while (hover.length>0){
+      console.log("made it")
     }
     else if (item.position.x >= -40){
-      item.position.x += -0.05;
+      item.position.x += -0.1;
 
     }
     else{
