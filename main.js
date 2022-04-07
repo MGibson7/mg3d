@@ -212,7 +212,7 @@ function onMouseClick( event ) {
         <a href= 'https://github.com/MGibson7/ACDTVSQLQUERIES' target='_blank' rel='noopener noreferrer'><button>SOURCE CODE</button></a>\
                         <a href= './ACDTVSQL2.mp4'target='_blank' rel='noopener noreferrer'><button>LIVE DEMO</button></a>\
                         <p>SQL code for pulling total number of unique accounts and subsequent billing from large assortment of account data. \
-                        Group unique accounts, sort by revenue, state, etc. Quick view of new accounts vs lost accounts. See overview of customer base differences month vs month.</p>"
+                        Group unique accounts. See overview of customer base differences month vs month.</p>"
 
     }
     else if (project7Inter.length >0){
