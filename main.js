@@ -4,10 +4,11 @@ import { OrbitControls } from 'https://unpkg.com/three@0.127.0/examples/jsm/cont
 import threexDomevents from 'https://cdn.skypack.dev/threex-domevents';
 
 
-var THREE = require('three') // require peer dependency
+
 var initializeDomEvents = require('threex.domevents')
 var THREEx = {}
 initializeDomEvents(THREE, THREEx)
+
 
 
 // Setup
@@ -26,7 +27,8 @@ camera.position.setZ(30);
 
 renderer.render(scene, camera);
 
-
+//to add event listeners
+var domEvents	= new THREEx.DomEvents(camera, renderer.domElement)
 
 const pointLight = new THREE.PointLight(0xffffff)
 pointLight.position.set(20,20,20)
