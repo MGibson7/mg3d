@@ -5,9 +5,11 @@ import threexDomevents from 'https://cdn.skypack.dev/threex-domevents';
 
 
 
+var tree = require('three') // require peer dependency
 var initializeDomEvents = require('threex.domevents')
 var THREEx = {}
-initializeDomEvents(THREE, THREEx)
+initializeDomEvents(tree, THREEx)
+
 
 
 
