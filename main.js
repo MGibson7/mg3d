@@ -158,7 +158,7 @@ function onMouseClick( event ) {
 
 
 
-window.addEventListener( 'mouseclick', onMouseClick, false );
+window.addEventListener( 'click', onMouseClick, false );
 
 
 
