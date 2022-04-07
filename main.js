@@ -153,7 +153,7 @@ function onMouseClick( event ) {
     if (isIntersected.length > 0) {
         console.log('Mesh clicked!')
         let projecthere = document.getElementById('projecthere')
-        projecthere.innerHTML = "<img src = './img/football.png' alt = 'Helmet' width = 100px, height = 100px>\
+        projecthere.innerHTML = "<img src = './football.png' alt = 'Helmet' width = 100px, height = 100px>\
         <a href= 'https://github.com/MGibson7/ALLTIMEFANTASY' target='_blank' rel='noopener noreferrer'><button id = source1>SOURCE CODE</button></a>\
                         <a href= './video/FantasyTrading.mp4'target='_blank' rel='noopener noreferrer'><button id = demo1>LIVE DEMO</button></a>\
                         <p>Trading card game that assigns you a random player from a random year and then it's up to you to accept or reject a trade offer for them.</p>"

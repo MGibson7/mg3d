@@ -58,6 +58,10 @@ canvas {
 
   }
 
+  button{
+    cursor: pointer;
+  }
+
 .header2 p{
   font-size: 0.5rem;
 }
