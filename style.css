@@ -57,7 +57,9 @@ canvas {
     padding: 1rem;
 
   }
-
+a{
+  cursor: pointer;
+}
 
   
   img{
