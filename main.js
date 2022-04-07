@@ -197,7 +197,7 @@ function animate() {
     while (hover.length>0){
       console.log("made it")
     }
-    else if (item.position.x >= -40){
+    if (item.position.x >= -40){
       item.position.x += -0.1;
 
     }
