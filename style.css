@@ -88,10 +88,7 @@ a{
     margin-bottom: var(--spacing);
   }
 
-  .format{
-    grid-row:2;
-    cursor: pointer;
-  }
+
 
 
 
