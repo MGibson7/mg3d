@@ -149,16 +149,21 @@ var mouse = new THREE.Vector2();
 
 function onMouseClick( event ) {
     raycaster.setFromCamera( mouse, camera );
-    var isIntersected = raycaster.intersectObject( 'michael2' );
+    var isIntersected = raycaster.intersectObject( michael2 );
     if (isIntersected) {
         console.log('Mesh clicked!')
     }
 }
 
+function onMouseMove( event ) {
+  mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
+  mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
+}
 
 
 
 window.addEventListener( 'click', onMouseClick, false );
+window.addEventListener( 'mousemove', onMouseMove, false );
 
 
 
@@ -172,9 +177,10 @@ function animate() {
   michael.rotation.x += 0.01;
   michael.rotation.y += 0.005;
   michael.rotation.z += 0.01;
+
+  var hovInter = raycaster.intersectObject(array1);
  
   for (const item of array1){
-    var hovInter = raycaster.intersectObject(array1);
     if(hovInter){
       break
     
