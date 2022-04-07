@@ -150,7 +150,7 @@ var mouse = new THREE.Vector2();
 function onMouseClick( event ) {
     raycaster.setFromCamera( mouse, camera );
     var isIntersected = raycaster.intersectObjects(array1);
-    if (isIntersected) {
+    if (isIntersected == true) {
         console.log('Mesh clicked!')
     }
 }
