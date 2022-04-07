@@ -143,6 +143,18 @@ michael11.position.x = 55;
 michael11.position.z = 10;
 
 
+//Add Event Listener
+var raycaster = new THREE.Raycaster();
+var mouse = new THREE.Vector2();
+var targetMesh
+function onMouseClick( event ) {
+    raycaster.setFromCamera( mouse, camera );
+    var isIntersected = raycaster.intersectObject( event );
+    if (isIntersected) {
+        console.log('Mesh clicked!')
+    }
+}
+
 
 
 
@@ -161,6 +173,7 @@ function animate() {
   michael.rotation.z += 0.01;
  
   for (const item of array1){
+    onMouseClick(item);
     if (item.position.x >= -40){
       item.position.x += -0.1;
 
