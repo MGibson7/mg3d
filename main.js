@@ -107,7 +107,7 @@ scene.add(michael11);
 
 
 let array1 = [michael2, michael3, michael4, michael5, michael6, michael7, michael8, michael9, michael10, michael11]
-
+let hover = []
 
 michael.position.z = 10;
 michael.position.x = 0;
