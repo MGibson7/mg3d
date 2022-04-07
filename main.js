@@ -152,8 +152,10 @@ function onMouseClick( event ) {
     var isIntersected = raycaster.intersectObject(michael2);
     if (isIntersected.length > 0) {
         console.log('Mesh clicked!')
-        projecthere = document.getElementById('projecthere')
-        projecthere.innerHTML = "<p> Project here </p>"
+        let projecthere = document.getElementById('projecthere')
+        projecthere.innerHTML = "<p> ALL TIME FANTASY FOOTBALL</p>\
+        <a href= 'https://github.com/MGibson7/ALLTIMEFANTASY' target='_blank' rel='noopener noreferrer'><button id = source1>SOURCE CODE</button></a>\
+                        <a href= './video/FantasyTrading.mp4'target='_blank' rel='noopener noreferrer'><button id = demo1>LIVE DEMO</button></a>"
 
     }
 }
@@ -195,7 +197,7 @@ function animate() {
       break
     }
     else if (item.position.x >= -40){
-      item.position.x += -0.1;
+      item.position.x += -0.05;
 
     }
     else{
