@@ -145,11 +145,11 @@ michael11.position.z = 10;
 
 //Add Event Listener
 var raycaster = new THREE.Raycaster();
-var mouse = new THREE.Vector3();
+var mouse = new THREE.Vector2();
 
 function onMouseClick( event ) {
     raycaster.setFromCamera( mouse, camera );
-    var isIntersected = raycaster.intersectObject(michael2);
+    var isIntersected = raycaster.intersectObjects(array1);
     if (isIntersected) {
         console.log('Mesh clicked!')
     }
