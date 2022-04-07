@@ -145,7 +145,7 @@ michael11.position.z = 10;
 
 //Add Event Listener
 var raycaster = new THREE.Raycaster();
-var mouse = new THREE.Vector2();
+var mouse = new THREE.Vector3();
 
 function onMouseClick( event ) {
     raycaster.setFromCamera( mouse, camera );
