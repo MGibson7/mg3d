@@ -174,6 +174,11 @@ function animate() {
   michael.rotation.z += 0.01;
  
   for (const item of array1){
+    var hovInter = raycaster.intersectObject(item);
+    if(hovInter){
+      break
+    
+    }
     if (item.position.x >= -40){
       item.position.x += -0.1;
 
