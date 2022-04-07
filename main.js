@@ -174,7 +174,7 @@ function animate() {
   michael.rotation.z += 0.01;
  
   for (const item of array1){
-    var hovInter = raycaster.intersectObject(item);
+    var hovInter = raycaster.intersectObject(array1);
     if(hovInter){
       break
     
