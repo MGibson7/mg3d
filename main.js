@@ -149,6 +149,7 @@ var mouse = new THREE.Vector2();
 
 function onMouseClick( event ) {
     raycaster.setFromCamera( mouse, camera );
+    var cubeInter = raycaster.intersectObject(michael);
     var isIntersected = raycaster.intersectObject(michael2);
     var project2Inter = raycaster.intersectObject(michael3);
     var project3Inter = raycaster.intersectObject(michael4);
@@ -169,10 +170,16 @@ function onMouseClick( event ) {
                         <p>Trading card game that assigns you a random player from a random year and then it's up to you to accept or reject a trade offer for them.</p>"
 
     }
+    else if (cubeInter.length >0){
+      console.log('Mesh clicked!')
+        let projecthere = document.getElementById('projecthere')
+        projecthere.innerHTML = "<img src = './cartoonme.png' alt = 'Cartoon' width = 100px, height = 100px>"
+
+    }
     else if (project2Inter.length >0){
       console.log('Mesh clicked!')
         let projecthere = document.getElementById('projecthere')
-        projecthere.innerHTML = "<img src = './robot.jpeg' alt = 'Helmet' width = 100px, height = 100px>\
+        projecthere.innerHTML = "<img src = './robot.jpeg' alt = 'Robot' width = 100px, height = 100px>\
         <a href= 'https://github.com/MGibson7/RockPaperScissorsJava' target='_blank' rel='noopener noreferrer'><button>SOURCE CODE</button></a>\
                         <a href= './RockPaperScissorsJava.mp4'target='_blank' rel='noopener noreferrer'><button>LIVE DEMO</button></a>\
                         <p>rock-paper-scissors against the computer in first to 5 matches and keeps track of titles won.</p>"
@@ -249,7 +256,7 @@ function onMouseClick( event ) {
         let projecthere = document.getElementById('projecthere')
         projecthere.innerHTML = "<img src = './junk.webp' alt = 'Junk' width = 100px, height = 100px>\
         <a href= 'https://github.com/MGibson7/SMALLBIZAUTOMATION-JunkintheTruck' target='_blank' rel='noopener noreferrer'><button>SOURCE CODE</button></a>\
-                        <a href= './JunkinTruckTexts.mp4'target='_blank' rel='noopener noreferrer'><button>LIVE DEMO</button></a>\
+                        <a href= './junktruckvid.mp4'target='_blank' rel='noopener noreferrer'><button>LIVE DEMO</button></a>\
                         <p>text alerts of incoming job opportunities to vendors dependent on their criteria & ability</p>"
 
     }
