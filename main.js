@@ -1,7 +1,13 @@
 
 import * as THREE from 'https://unpkg.com/three@0.127.0/build/three.module.js';
 import { OrbitControls } from 'https://unpkg.com/three@0.127.0/examples/jsm/controls/OrbitControls.js';
+import threexDomevents from 'https://cdn.skypack.dev/threex-domevents';
 
+
+var THREE = require('three') // require peer dependency
+var initializeDomEvents = require('threex.domevents')
+var THREEx = {}
+initializeDomEvents(THREE, THREEx)
 
 
 // Setup
