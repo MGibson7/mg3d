@@ -69,7 +69,7 @@ new THREE.MeshBasicMaterial({
   map: new THREE.TextureLoader().load('htmlcss.png')
 })];
 
-const michael = new THREE.Mesh(new THREE.BoxGeometry(5, 5, 5), materials);
+const michael = new THREE.Mesh(new THREE.BoxGeometry(9, 9, 9), materials);
 
 
 const robotTexture = new THREE.TextureLoader().load('robot.jpeg');
@@ -110,8 +110,7 @@ let array1 = [michael2, michael3, michael4, michael5, michael6, michael7, michae
 let hover = []
 
 michael.position.z = 10;
-michael.position.x = -20;
-michael.position.y = -5;
+michael.position.x = 0;
 michael2.position.z = 10;
 michael2.position.x = 10;
 michael2.position.y = -10;
