@@ -69,7 +69,7 @@ new THREE.MeshBasicMaterial({
   map: new THREE.TextureLoader().load('htmlcss.png')
 })];
 
-const michael = new THREE.Mesh(new THREE.BoxGeometry(9, 9, 9), materials);
+const michael = new THREE.Mesh(new THREE.BoxGeometry(5, 5, 5), materials);
 
 
 const robotTexture = new THREE.TextureLoader().load('robot.jpeg');

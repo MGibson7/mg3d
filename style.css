@@ -51,7 +51,7 @@ select{
     background: var(--dark-bg);
     grid-column: 1 / span 2;
     font-size: 1.5rem;
-    padding: 1rem;
+    padding: 0.5rem;
     margin-bottom: 100px;
   }
   .header2{
@@ -88,9 +88,6 @@ a{
     margin-bottom: var(--spacing);
   }
 
-.format{
-  grid-row: 2;
-}
 
 
 
