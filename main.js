@@ -110,7 +110,8 @@ let array1 = [michael2, michael3, michael4, michael5, michael6, michael7, michae
 let hover = []
 
 michael.position.z = 10;
-michael.position.x = 0;
+michael.position.x = -20;
+michael.position.y = -5;
 michael2.position.z = 10;
 michael2.position.x = 10;
 michael2.position.y = -10;
