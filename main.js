@@ -262,13 +262,24 @@ function onMouseClick( event ) {
     }
 }
 
-function onMouseHover( event ) {
+function onDocumentMouseMove(event) {
+
+  var mouse = new THREE.Vector2();
+  mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
+  mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
+
+  var raycaster = new THREE.Raycaster();
   raycaster.setFromCamera( mouse, camera );
-  var hover = raycaster.intersectObjects(array1);
-  if (hover.length > 0) {
-      console.log('Hovering!')
+  var intersects = raycaster.intersectObjects( array1 );
+
+  if(intersects.length > 0) {
+      $('html,body').css('cursor', 'pointer');
+  } else {
+      $('html,body').css('cursor', 'default');
   }
+
 }
+
 
 function onMouseMove( event ) {
   mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
@@ -278,7 +289,6 @@ function onMouseMove( event ) {
 
 
 window.addEventListener( 'click', onMouseClick, false );
-window.addEventListener( 'mouseover', onMouseHover, false );
 window.addEventListener( 'mousemove', onMouseMove, false );
 
 
