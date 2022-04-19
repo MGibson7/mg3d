@@ -272,11 +272,10 @@ function onDocumentMouseMove(event) {
   raycaster.setFromCamera( mouse, camera );
   var intersects = raycaster.intersectObjects( array1 );
 
-  if(intersects.length > 0) {
-      $('html,body').css('cursor', 'pointer');
-  } else {
-      $('html,body').css('cursor', 'default');
-  }
+  if (intersects && intersects.length > 0) { 
+    document.body.style.cursor = 'pointer' 
+  } 
+  else { document.body.style.cursor = 'default' }
 
 }
 
@@ -290,6 +289,8 @@ function onMouseMove( event ) {
 
 window.addEventListener( 'click', onMouseClick, false );
 window.addEventListener( 'mousemove', onMouseMove, false );
+window.addEventListener( 'mousemove', onDocumentMouseMove, false );
+
 
 
 
