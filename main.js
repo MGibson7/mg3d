@@ -244,7 +244,7 @@ function onMouseClick( event ) {
     else if (project9Inter.length >0){
       console.log('Mesh clicked!')
         let projecthere = document.getElementById('projecthere')
-        projecthere.innerHTML = "<img src = './money.jpg' alt = 'money' width = 100px, height = 100px>\
+        projecthere.innerHTML = "<img src = './money.jpeg' alt = 'money' width = 100px, height = 100px>\
         <a href= 'https://github.com/MGibson7/networthStatement' target='_blank' rel='noopener noreferrer'><button>SOURCE CODE</button></a>\
                         <a href= 'https://mgibson7.github.io/networthStatement/'_blank' rel='noopener noreferrer'><button>LIVE DEMO</button></a>\
                         <p>Interactive networth statement that displays where you stack up amongst your peers \
