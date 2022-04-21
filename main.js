@@ -80,7 +80,7 @@ const invTexture = new THREE.TextureLoader().load('invoice.jpg');
 const dtvTexture = new THREE.TextureLoader().load('dtv.jpg');
 const conTexture = new THREE.TextureLoader().load('contact.png');
 const viaTexture = new THREE.TextureLoader().load('viasat.png');
-const fireTexture = new THREE.TextureLoader().load('fire.png');
+const networthTexture = new THREE.TextureLoader().load('money.jpg');
 const junkTexture = new THREE.TextureLoader().load('junk.webp');
 const michael2 = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: footballTexture }));
 const michael3 = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: robotTexture }));
@@ -90,7 +90,7 @@ const michael6 = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBa
 const michael7 = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: dtvTexture }));
 const michael8 = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: conTexture }));
 const michael9 = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: viaTexture }));
-const michael10 = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: fireTexture }));
+const michael10 = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: networthTexture }));
 const michael11 = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: junkTexture }));
 
 scene.add(michael);
@@ -111,9 +111,9 @@ let hover = []
 
 michael.position.z = 10;
 michael.position.x = 0;
-michael2.position.z = 10;
-michael2.position.x = 10;
-michael2.position.y = -10;
+michael9.position.z = 10;
+michael9.position.x = 10;
+michael9.position.y = -10;
 michael3.position.y = -10;
 michael3.position.x = 15;
 michael3.position.z = 10;
@@ -132,9 +132,9 @@ michael7.position.z = 10;
 michael8.position.y = -10;
 michael8.position.x = 40;
 michael8.position.z = 10;
-michael9.position.y = -10;
-michael9.position.x = 45;
-michael9.position.z = 10;
+michael2.position.y = -10;
+michael2.position.x = 45;
+michael2.position.z = 10;
 michael10.position.y = -10;
 michael10.position.x = 50;
 michael10.position.z = 10;
@@ -244,11 +244,11 @@ function onMouseClick( event ) {
     else if (project9Inter.length >0){
       console.log('Mesh clicked!')
         let projecthere = document.getElementById('projecthere')
-        projecthere.innerHTML = "<img src = './fire.png' alt = 'Fire' width = 100px, height = 100px>\
-        <a href= 'https://github.com/MGibson7/UltimateFIREProgram' target='_blank' rel='noopener noreferrer'><button>SOURCE CODE</button></a>\
-                        <a href= './fire.mp4'target='_blank' rel='noopener noreferrer'><button>LIVE DEMO</button></a>\
-                        <p>Program to forecast potential retirement savings with inputted variables \
-                        (having a kid in X year, new home in X year at X price, wage increase/decrease, etc.)</p>"
+        projecthere.innerHTML = "<img src = './money.jpg' alt = 'money' width = 100px, height = 100px>\
+        <a href= 'https://github.com/MGibson7/networthStatement' target='_blank' rel='noopener noreferrer'><button>SOURCE CODE</button></a>\
+                        <a href= 'https://mgibson7.github.io/networthStatement/'_blank' rel='noopener noreferrer'><button>LIVE DEMO</button></a>\
+                        <p>Interactive networth statement that displays where you stack up amongst your peers \
+                        utilized Javascript OOP, DOM Manipulation, and CSS Grid</p>"
 
     }
     else if (project10Inter.length >0){
