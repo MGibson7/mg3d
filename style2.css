@@ -24,18 +24,30 @@ img{
     background-color: rgba(0, 0, 0, 0.829);
     margin: 1vw;
     display: grid;
-    grid-template-columns: 1fr, 1fr, 1fr;
-    grid-template-rows: 0.5fr, 0.5fr, 0,5fr;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 0.5fr, 0.5fr;
+}
+
+.buttons{
+    grid-column: 2;
+    grid-row: 2;
+    text-align: center;
 }
 
 .demo{
-    grid-column: 2;
-    grid-row: 2;
+    align-self: center;
+    background-color: red;
+
+
 }
 
 .source{
-    grid-column: 3;
-    grid-row: 2;
+    align-self: center;
+    background-color: mediumblue;
+
+}
+.source:hover, .demo:hover{
+    cursor: pointer;
 }
 
 h3{
@@ -45,7 +57,8 @@ h3{
 
 p{
     grid-column: 2;
-    grid-row: 2;
+    grid-row: 1;
+    text-align: center;
 }
 
 
