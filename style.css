@@ -180,11 +180,12 @@ a{
   #header2{
     grid-column: 2;
     font-size: 1.5rem;
+    padding: 0rem;
 
   }
   #header2 img{
-    max-height: 15vh;
-    max-width: 15vw;
+    max-height: 10vh;
+    max-width: 10vw;
   }
   header {
     background: var(--dark-bg);

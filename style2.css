@@ -84,3 +84,14 @@ p{
       transition-property: left, top, opacity;
     }
   }
+
+  @media screen and (max-width:1000px){
+      body{
+          font-size: 1vh;
+      }
+      #container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        color: white;
+    }
+  }
