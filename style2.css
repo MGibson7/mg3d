@@ -17,14 +17,25 @@ img{
     max-width: 20vw;
     animation: shine 5s ease-in-out  infinite;
     animation-fill-mode: forwards;  
+    grid-column: 1;
 }
 
 .project{
     background-color: rgba(0, 0, 0, 0.829);
     margin: 1vw;
     display: grid;
-    grid-template-columns: 1fr, 1fr;
-    grid-template-rows: 0.5fr, 0.5fr;
+    grid-template-columns: 1fr, 1fr, 1fr;
+    grid-template-rows: 0.5fr, 0.5fr, 0,5fr;
+}
+
+.demo{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.source{
+    grid-column: 3;
+    grid-row: 2;
 }
 
 h3{
@@ -34,6 +45,7 @@ h3{
 
 p{
     grid-column: 2;
+    grid-row: 2;
 }
 
 
