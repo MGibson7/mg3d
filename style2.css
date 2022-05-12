@@ -17,7 +17,11 @@ img{
     max-width: 20vw;
     animation: shine 5s ease-in-out  infinite;
     animation-fill-mode: forwards;  
+}
+
+.projectPic{
     grid-column: 1;
+
 }
 
 .project{
