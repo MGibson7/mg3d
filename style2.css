@@ -39,7 +39,7 @@ img{
 }
 
 button{
-    max-width: 10vw;
+    max-width: 12vw;
     max-height: 5vh;
 }
 
@@ -91,11 +91,15 @@ p{
 
   @media screen and (max-width:1000px){
       body{
-          font-size: 1vh;
+          font-size: 2vh;
       }
       #container{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         color: white;
+    }
+
+    .project{
+        grid-template-columns: 1fr 1fr;
     }
   }

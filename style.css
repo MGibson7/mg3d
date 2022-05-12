@@ -23,7 +23,6 @@ main {
   color: white;
   z-index: 99;
   position: absolute;
-  width: 100%;
   margin: 0px auto;
   padding: 0px 0px;
   
@@ -184,8 +183,8 @@ a{
 
   }
   #header2 img{
-    max-height: 10vh;
-    max-width: 10vw;
+    max-height: 5vh;
+    max-width: 5vw;
   }
   header {
     background: var(--dark-bg);
