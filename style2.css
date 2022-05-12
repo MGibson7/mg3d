@@ -1,0 +1,35 @@
+body{
+    background-image: url(street.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: brandon-grotesque, sans-serif;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    color: white;
+}
+
+img{
+    max-height: 20vh;
+    max-width: 20vw;
+}
+
+.project{
+    background-color: rgba(0, 0, 0, 0.829);
+    margin: 1vw;
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: 0.5fr, 0.5fr;
+}
+
+h3{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+p{
+    grid-column: 2;
+}
+
