@@ -72,23 +72,23 @@ new THREE.MeshBasicMaterial({
 const michael = new THREE.Mesh(new THREE.BoxGeometry(7, 7, 7), materials);
 
 
-const robotTexture = new THREE.TextureLoader().load('robot.jpeg');
+const pumpkinTexture = new THREE.TextureLoader().load('pumpkin.png');
 const footballTexture = new THREE.TextureLoader().load('football.png');
 const etchTexture = new THREE.TextureLoader().load('etch.jpeg');
 const calcTexture = new THREE.TextureLoader().load('calculator.jpeg');
 const invTexture = new THREE.TextureLoader().load('invoice.jpg');
 const dtvTexture = new THREE.TextureLoader().load('dtv.jpg');
-const conTexture = new THREE.TextureLoader().load('contact.png');
+const jepTexture = new THREE.TextureLoader().load('jeopardy.webp');
 const viaTexture = new THREE.TextureLoader().load('viasat.png');
 const networthTexture = new THREE.TextureLoader().load('money.jpeg');
 const fireTexture = new THREE.TextureLoader().load('fire.png')
 const michael2 = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: footballTexture }));
-const michael3 = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: robotTexture }));
+const michael3 = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: pumpkinTexture }));
 const michael4 = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: etchTexture }));
 const michael5 = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: calcTexture }));
 const michael6 = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: invTexture }));
 const michael7 = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: dtvTexture }));
-const michael8 = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: conTexture }));
+const michael8 = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: jepTexture }));
 const michael9 = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: viaTexture }));
 const michael10 = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: networthTexture }));
 const michael11 = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: fireTexture }));
@@ -112,36 +112,36 @@ let array1 = [michael2, michael3, michael4, michael5, michael6, michael7, michae
 
 michael.position.z = 10;
 michael.position.x = 0;
-michael11.position.z = 10;
-michael11.position.x = 10;
+michael8.position.z = 10;
+michael8.position.x = 10;
+michael8.position.y = -10;
 michael11.position.y = -10;
+michael11.position.x = 15;
+michael11.position.z = 10;
 michael10.position.y = -10;
-michael10.position.x = 15;
+michael10.position.x = 20;
 michael10.position.z = 10;
+michael3.position.y = -10;
+michael3.position.x = 25;
+michael3.position.z = 10;
+michael2.position.y = -10;
+michael2.position.x = 30;
+michael2.position.z = 10;
 michael9.position.y = -10;
-michael9.position.x = 20;
+michael9.position.x = 35;
 michael9.position.z = 10;
+michael6.position.y = -10;
+michael6.position.x = 40;
+michael6.position.z = 10;
 michael4.position.y = -10;
-michael4.position.x = 25;
+michael4.position.x = 45;
 michael4.position.z = 10;
 michael5.position.y = -10;
-michael5.position.x = 30;
+michael5.position.x = 50;
 michael5.position.z = 10;
-michael6.position.y = -10;
-michael6.position.x = 35;
-michael6.position.z = 10;
 michael7.position.y = -10;
-michael7.position.x = 40;
+michael7.position.x = 55;
 michael7.position.z = 10;
-michael8.position.y = -10;
-michael8.position.x = 45;
-michael8.position.z = 10;
-michael2.position.y = -10;
-michael2.position.x = 50;
-michael2.position.z = 10;
-michael3.position.y = -10;
-michael3.position.x = 55;
-michael3.position.z = 10;
 
 
 
@@ -181,10 +181,10 @@ function onMouseClick( event ) {
     else if (project2Inter.length >0){
       console.log('Mesh clicked!')
         let projecthere = document.getElementById('projecthere')
-        projecthere.innerHTML = "<img src = './robot.jpeg' alt = 'Robot' width = 100px, height = 100px>\
-        <a href= 'https://github.com/MGibson7/RockPaperScissorsJava' target='_blank' rel='noopener noreferrer'><button>SOURCE CODE</button></a>\
-                        <a href= './RockPaperScissorsJava.mp4'target='_blank' rel='noopener noreferrer'><button>LIVE DEMO</button></a>\
-                        <p>rock-paper-scissors against the computer in first to 5 matches and keeps track of titles won.</p>"
+        projecthere.innerHTML = "<img src = './pumpkin.png' alt = 'Pumpkin' width = 100px, height = 100px>\
+        <a href= 'https://github.com/MGibson7/SpookyScaryHalloween' target='_blank' rel='noopener noreferrer'><button>SOURCE CODE</button></a>\
+                        <a href= 'https://mgibson7.github.io/SpookyScaryHalloween/'target='_blank' rel='noopener noreferrer'><button>LIVE DEMO</button></a>\
+                        <p>In progress Halloween Experience/Merchandise ECommerce Site Design</p>"
 
     }
     else if (project3Inter.length >0){
@@ -227,10 +227,10 @@ function onMouseClick( event ) {
     else if (project7Inter.length >0){
       console.log('Mesh clicked!')
         let projecthere = document.getElementById('projecthere')
-        projecthere.innerHTML = "<img src = './contact.png' alt = 'Phone' width = 100px, height = 100px>\
-        <a href= 'https://github.com/MGibson7/ACAddTechContactInfo' target='_blank' rel='noopener noreferrer'><button>SOURCE CODE</button></a>\
-                        <a href= './addcontactinfovia.mp4'target='_blank' rel='noopener noreferrer'><button>LIVE DEMO</button></a>\
-                        <p>Program uses selenium and adds phone number of corresponding tech that is assigned to that work order.</p>"
+        projecthere.innerHTML = "<img src = './jeopardy.webp' alt = 'Jeopardy' width = 100px, height = 100px>\
+        <a href= 'https://github.com/MGibson7/jeopardy' target='_blank' rel='noopener noreferrer'><button>SOURCE CODE</button></a>\
+                        <a href= 'https://mgibson7.github.io/jeopardy'target='_blank' rel='noopener noreferrer'><button>LIVE DEMO</button></a>\
+                        <p>Leveraged Fetch API tools to access and work with JSON data to create a variation of jeopardy.</p>"
 
     }
     else if (project8Inter.length >0){
@@ -256,7 +256,7 @@ function onMouseClick( event ) {
     else if (project10Inter.length >0){
       console.log('Mesh clicked!')
         let projecthere = document.getElementById('projecthere')
-        projecthere.innerHTML = "<img src = './fire.png' alt = 'Junk' width = 100px, height = 100px>\
+        projecthere.innerHTML = "<img src = './fire.png' alt = 'fire' width = 100px, height = 100px>\
         <a href= 'https://github.com/MGibson7/freefiretools' target='_blank' rel='noopener noreferrer'><button>SOURCE CODE</button></a>\
                         <a href= 'https://mgibson7.github.io/freefiretools/'target='_blank' rel='noopener noreferrer'><button>LIVE DEMO</button></a>\
                         <p>One stop for free financial independence resources and tools. Made utilizing webpack, CSS Grid, JavaScript, DOM maniupulation</p>"
