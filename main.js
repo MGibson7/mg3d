@@ -41,8 +41,8 @@ const controls = new OrbitControls(camera, renderer.domElement);
 
 
 
-const spaceTexture = new THREE.TextureLoader().load('street.jpg');
-scene.background = spaceTexture;
+//const spaceTexture = new THREE.TextureLoader().load('street.jpg');
+//scene.background = new THREE.Color( 0xff0000 );
 
 
 
