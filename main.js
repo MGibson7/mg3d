@@ -42,7 +42,7 @@ const controls = new OrbitControls(camera, renderer.domElement);
 
 
 const spaceTexture = new THREE.TextureLoader().load('cubeback.jpg');
-scene.background = new THREE.Color( 0xff0000 );
+scene.background = spaceTexture;
 
 
 
